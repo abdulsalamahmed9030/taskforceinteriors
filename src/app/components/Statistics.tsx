@@ -1,12 +1,38 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function StatisticsSection() {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const countRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    let start = 1;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          startCount();
+          setHasAnimated(true);
+        }
+      },
+      {
+        threshold: 0.5, // adjust as needed
+      }
+    );
+
+    if (countRef.current) {
+      observer.observe(countRef.current);
+    }
+
+    return () => {
+      if (countRef.current) {
+        observer.unobserve(countRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
+  const startCount = () => {
+    let start = 0;
     const end = 100;
     const duration = 2000; // total duration in ms
     const intervalTime = duration / end;
@@ -19,9 +45,7 @@ export default function StatisticsSection() {
         setCount(start);
       }
     }, intervalTime);
-
-    return () => clearInterval(counter);
-  }, []);
+  };
 
   return (
     <section className="bg-[url('/funfact-bg.png')] bg-cover bg-center py-16 md:py-24 lg:py-32">
@@ -38,7 +62,10 @@ export default function StatisticsSection() {
 
         <div className="w-full">
           <div className="text-left">
-            <div className="text-[80px] md:text-[100px] font-extrabold text-gray-300 leading-none">
+            <div
+              ref={countRef}
+              className="text-[80px] md:text-[100px] font-extrabold text-gray-300 leading-none"
+            >
               {count}
               <span className="text-gray-400 align-top text-[60px]">%</span>
             </div>
