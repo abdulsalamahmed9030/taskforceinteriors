@@ -38,7 +38,7 @@ export default function TaskForceSection() {
           {/* Left content (STATIC) */}
           <div className="lg:w-1/2 space-y-6">
             <h2 className="text-3xl font-bold ">
-              Task FORCE INTERIOR (P) LTD.
+              Task FORCE INTERIOR (P) LTD00.
             </h2>
             <p className="text-xl mt-3 text-gray-300 leading-relaxed">
               Task Force Interior (P) Ltd. is led by seasoned professionals with
