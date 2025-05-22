@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+import Header from '../components/navbar/Header'
 import TaskForceSection from '../components/TaskForceSection'
 import TeamSection from '../components/TeamSection'
 import Footer from '../components/Footer'
