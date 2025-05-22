@@ -40,7 +40,7 @@ export default function TaskForceSection() {
             <h2 className="text-3xl font-bold ">
               Task FORCE INTERIOR (P) LTD.
             </h2>
-            <p className="text-xl mt-3 text-gray-300 leading-relaxed">
+            <p className="text-xl mt-3 text-white leading-relaxed">
               Task Force Interior (P) Ltd. is led by seasoned professionals with
               extensive expertise in civil engineering and interior design,
               prioritizing the efficient management of turnkey projects.
@@ -48,7 +48,7 @@ export default function TaskForceSection() {
             <h2 className="text-3xl font-bold text-[#ffda08]">
               WORKING BACKGROUND
             </h2>
-            <p className="text-xl mt-3 text-gray-300 leading-relaxed">
+            <p className="text-xl mt-3 text-white leading-relaxed">
               Our company boasts a strong history of delivering successful
               projects, spanning upscale office and showroom interior
               decoration, software centers, BPOs, and data centers. We excel in
@@ -61,7 +61,7 @@ export default function TaskForceSection() {
               and unwavering commitment to excellence across diverse sectors.
             </p>
             <h2 className="text-3xl font-bold ">NATURE OF WORK UNDERTAKEN</h2>
-            <p className="text-xl mt-3 text-gray-300 leading-relaxed">
+            <p className="text-xl mt-3 text-white leading-relaxed">
               Our specialization encompasses a comprehensive array of services,
               spanning false ceiling installation, flooring solutions, cladding,
               furnishing, carpentry, electrical work, painting, polishing, and

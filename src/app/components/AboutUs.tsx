@@ -52,16 +52,16 @@ export default function AboutUs() {
 
           <h2 className="text-5xl font-extrabold leading-tight text-white">
             TASK FORCE INTERIORS <br />
-            <span className="text-gray-300">DESIGN SERVICE</span>
+            <span className="text-white">DESIGN SERVICE</span>
           </h2>
 
-          <p className="text-lg text-gray-200 max-w-xl">
+          <p className="text-lg text-white max-w-xl">
             TASK FORCE INTERIOR (P) LTD. is an organization overseen by
             individuals with extensive experience in civil engineering, interior
             design, and the management of turnkey projects.
           </p>
 
-          <p className="text-gray-400 max-w-xl">
+          <p className="text-white max-w-xl">
             Analyze the available space and develop efficient floor plans that
             maximize functionality, flow, and utilization of the area.
           </p>
