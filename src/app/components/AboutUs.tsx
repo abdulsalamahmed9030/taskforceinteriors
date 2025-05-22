@@ -37,7 +37,7 @@ export default function AboutUs() {
         >
           <div className="relative w-full h-full">
             <Image
-              src="/img2.jpg"
+              src="/img2.JPG"
               alt="Interior"
               fill
               className="object-cover"
