@@ -79,7 +79,14 @@ export default function MobileNav() {
         </div>
 
         {/* Contact Info */}
-        
+        <div className="mt-auto text-xs space-y-1 pt-8 border-t border-gray-700">
+          <p className="font-bold text-white">Contact Info</p>
+          <p>#3-5-823, Ground Floor Hyderabad</p>
+          <p>Business Center Hyderguda Hyderabad - 500029</p>
+          <p>Phone: 040-23240629 / 040-66669067</p>
+          <p>Email: info@taskforceinteriors.com</p>
+         
+        </div>
       </div>
     </>
   );
