@@ -8,28 +8,31 @@ export default function StatisticsSection() {
   const countRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          startCount();
-          setHasAnimated(true);
-        }
-      },
-      {
-        threshold: 0.5, // adjust as needed
-      }
-    );
+  const node = countRef.current; // Save current ref in a variable
 
-    if (countRef.current) {
-      observer.observe(countRef.current);
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting && !hasAnimated) {
+        startCount();
+        setHasAnimated(true);
+      }
+    },
+    {
+      threshold: 0.5,
     }
+  );
 
-    return () => {
-      if (countRef.current) {
-        observer.unobserve(countRef.current);
-      }
-    };
-  }, [hasAnimated]);
+  if (node) {
+    observer.observe(node);
+  }
+
+  return () => {
+    if (node) {
+      observer.unobserve(node); // Use the saved node
+    }
+  };
+}, [hasAnimated]);
+
 
   const startCount = () => {
     let start = 0;
@@ -48,7 +51,7 @@ export default function StatisticsSection() {
   };
 
   return (
-    <section className="bg-[url('/funfact-bg.png')] bg-cover bg-center py-16 md:py-24 lg:py-32">
+    <section className="bg-[url('/funfact-bg.png')] bg-cover bg-center bg-white py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="lg:w-1/2 mb-10">
           <h6 className="text-yellow-500 text-xl uppercase tracking-widest font-semibold mb-2">

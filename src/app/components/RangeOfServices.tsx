@@ -27,8 +27,10 @@ export default function RangeOfServices() {
 
       <div className="text-xl tracking-widest text-yellow-500 uppercase">Our Services</div>
       <h2 className="text-3xl sm:text-5xl font-bold">
-        <span className="text-yellow-400">Range of </span>SERVICES
-      </h2>
+  <span className="text-yellow-400">Range of </span>
+  <span className="dark:text-black text-current">SERVICES</span>
+</h2>
+
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-x-6 gap-y-10 px-4 mt-10">
         {services.map((service, index) => (
