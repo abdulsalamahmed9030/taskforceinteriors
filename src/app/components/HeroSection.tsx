@@ -45,9 +45,9 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-[90vh] bg-black text-white overflow-hidden">
       {/* Left: Content */}
-      <div className="absolute inset-y-0 left-0 w-1/2 px-20 flex flex-col justify-center z-10">
+      <div className="absolute inset-y-0 left-0 w-full md:w-1/2 px-4 sm:px-10 md:px-20 flex flex-col justify-center z-10">
         {/* Social Icons */}
-        <div className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-5 text-white">
+        {/* <div className="absolute left-6 top-1/2 -translate-y-1/2 flex flex-col gap-5 text-white">
           {[
             "ri-facebook-fill",
             "ri-youtube-fill",
@@ -58,7 +58,7 @@ export default function HeroSection() {
               <i className={icon}></i>
             </a>
           ))}
-        </div>
+        </div> */}
 
         {/* Animated Text */}
         <div className="relative z-10 ">
@@ -90,7 +90,7 @@ export default function HeroSection() {
                 slide.subtitle
               )}
             </h2>
-            <p className="text-justify text-gray-300 mb-6 max-w-full sm:max-w-md text-sm sm:text-base">
+            <p className="text-justify text-gray-300 mb-6 max-w-full sm:max-w-md text-sm sm:text-base px-[2px]">
               {slide.description}
             </p>
 
