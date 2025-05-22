@@ -28,12 +28,12 @@ export default function TeamSection() {
     <section id="our-team" className="py-20 px-4 bg-white">
       {/* Section Title */}
       <div className="text-center mb-16">
-        <p className="text-yellow-500 font-bold tracking-widest">
+        <p className="text-[#ffda08] font-bold tracking-widest">
           OUR PROFESSIONALS
         </p>
         <h2 className="text-4xl md:text-5xl font-bold mt-2">
   <span className="dark:text-black text-current">EXPERTS AND OUR</span> <br />
-  <span className="text-yellow-500">TEAM MEMBERS</span>
+  <span className="text-[#ffda08]">TEAM MEMBERS</span>
 </h2>
 
       </div>
@@ -65,7 +65,7 @@ export default function TeamSection() {
                 <div className="absolute bottom-4 left-4 z-10 transition-colors duration-300">
                   <p
                     className={`text-sm font-semibold mb-1 ${
-                      isHovered ? "text-white" : "text-yellow-500"
+                      isHovered ? "text-white" : "text-[#ffda08]"
                     }`}
                   >
                     {member.title}

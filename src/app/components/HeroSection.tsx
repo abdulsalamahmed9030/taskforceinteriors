@@ -73,7 +73,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="w-screen"
           >
-            <p className="text-yellow-500 uppercase tracking-widest mb-2 text-2xl font-semibold">
+            <p className="text-[#ffda08] uppercase tracking-widest mb-2 text-2xl font-semibold">
               Welcome To
             </p>
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-2 z-auto">
@@ -125,7 +125,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Yellow Bar with Arrows */}
-      <div className="absolute bottom-0 w-full h-20 bg-yellow-400 flex items-center justify-center z-20">
+      <div className="absolute bottom-0 w-full h-20 bg-[#ffda08] flex items-center justify-center z-20">
         <button
           onClick={handlePrev}
           className="text-black text-2xl mx-10 hover:scale-110 transition"

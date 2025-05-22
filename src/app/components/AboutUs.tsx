@@ -10,19 +10,18 @@ export default function AboutUs() {
     <section className="relative bg-black text-white overflow-hidden">
       {/* Animated Background Image */}
       <motion.div
-  className="absolute right-0 top-0 z-0 w-[800px] h-[600px]" // adjust size as needed
-  animate={{ scale: isHovered ? 1.05 : 1 }}
-  transition={{ duration: 1 }}
->
-  <Image
-    src="/shape-01.png"
-    alt="Background Shape"
-    layout="fill"
-    className="object-contain" // or object-cover, depending on desired fit
-    priority
-  />
-</motion.div>
-
+        className="absolute right-0 top-0 z-0 w-[800px] h-[600px]"
+        animate={{ scale: isHovered ? 1.05 : 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          src="/shape-01.png"
+          alt="Background Shape"
+          layout="fill"
+          className="object-contain"
+          priority
+        />
+      </motion.div>
 
       {/* Content Container */}
       <div
@@ -30,7 +29,7 @@ export default function AboutUs() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Main Feature Image Only (Not background) */}
+        {/* Main Feature Image Only */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="rounded-xl overflow-hidden shadow-lg w-full md:w-[600px] h-[400px] md:h-[500px]"
@@ -47,7 +46,7 @@ export default function AboutUs() {
 
         {/* Text Content */}
         <div className="space-y-6">
-          <div className="text-yellow-500 font-semibold flex items-center gap-2">
+          <div className="text-[#ffda08] font-semibold flex items-center gap-2">
             <span className="text-xl tracking-wider">ABOUT US</span>
           </div>
 
@@ -67,19 +66,19 @@ export default function AboutUs() {
             maximize functionality, flow, and utilization of the area.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 text-lg font-semibold text-yellow-400">
+          <div className="grid grid-cols-2 gap-4 text-lg font-semibold text-[#ffda08]">
             <div className="flex items-center gap-2">
-              <span className="text-yellow-400">✔</span> Interior Design
+              <span className="text-[#ffda08]">✔</span> Interior Design
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-yellow-400">✔</span> Execution as per
+              <span className="text-[#ffda08]">✔</span> Execution as per
               Visualization
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-yellow-400">✔</span> Banquet Hall Design
+              <span className="text-[#ffda08]">✔</span> Banquet Hall Design
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-yellow-400">✔</span> Room Space Planning
+              <span className="text-[#ffda08]">✔</span> Room Space Planning
             </div>
           </div>
 

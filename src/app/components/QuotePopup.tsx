@@ -14,10 +14,10 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
 
   return (
     <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center px-4">
-      <div className="bg-black border border-yellow-400 rounded-lg p-6 w-full max-w-md relative text-white">
+      <div className="bg-black border border-[#ffda08] rounded-lg p-6 w-full max-w-md relative text-white">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-yellow-400 text-black flex items-center justify-center"
+          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-[#ffda08] text-black flex items-center justify-center"
           aria-label="Close quote popup"
         >
           <X size={20} />
@@ -65,7 +65,7 @@ export default function QuotePopup({ isOpen, onClose }: QuotePopupProps) {
           />
           <button
             type="submit"
-            className="bg-yellow-400 text-black font-bold w-full py-2 rounded"
+            className="bg-[#ffda08] text-black font-bold w-full py-2 rounded"
           >
             Submit
           </button>

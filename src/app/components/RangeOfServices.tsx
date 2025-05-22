@@ -25,9 +25,9 @@ export default function RangeOfServices() {
   return (
     <div className="bg-[#f9f4f1] py-10 text-left px-2 md:px-28">
 
-      <div className="text-xl tracking-widest text-yellow-500 uppercase">Our Services</div>
+      <div className="text-xl tracking-widest text-[#ffda08] uppercase">Our Services</div>
       <h2 className="text-3xl sm:text-5xl font-bold">
-  <span className="text-yellow-400">Range of </span>
+  <span className="text-[#ffda08]">Range of </span>
   <span className="dark:text-black text-current">SERVICES</span>
 </h2>
 

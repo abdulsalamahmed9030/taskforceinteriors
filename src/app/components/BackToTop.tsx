@@ -44,7 +44,7 @@ export default function BackToTop() {
         height: "48px",
         transition: "top 0.5s ease",
       }}
-      className="fixed bg-yellow-400 text-black rounded-full p-4 shadow-lg z-50 flex items-center justify-center"
+      className="fixed bg-[#ffda08] text-black rounded-full p-4 shadow-lg z-50 flex items-center justify-center"
     >
       <ChevronUp size={24} strokeWidth={3} />
     </button>

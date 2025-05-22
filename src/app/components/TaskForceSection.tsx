@@ -45,7 +45,7 @@ export default function TaskForceSection() {
               extensive expertise in civil engineering and interior design,
               prioritizing the efficient management of turnkey projects.
             </p>
-            <h2 className="text-3xl font-bold text-yellow-400">
+            <h2 className="text-3xl font-bold text-[#ffda08]">
               WORKING BACKGROUND
             </h2>
             <p className="text-xl mt-3 text-gray-300 leading-relaxed">

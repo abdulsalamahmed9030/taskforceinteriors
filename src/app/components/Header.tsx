@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import QuotePopup from "./QuotePopup";
+import Link from "next/link";
 
 
 function cn(...classes: (string | undefined | false | null)[]) {
@@ -29,7 +30,7 @@ export default function Header() {
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-slide" />
 
         {/* Yellow Button (hidden on mobile) */}
-       <div className="bg-yellow-400 h-full w-20 hidden md:flex items-center justify-center">
+       <div className="bg-[#ffda08] h-full w-20 hidden md:flex items-center justify-center">
   <button
     className="text-white font-bold"
     onClick={() => setShowQuote(true)}
@@ -41,8 +42,10 @@ export default function Header() {
 
         <div className="flex w-full items-center justify-between px-4 md:px-8">
           <div className="flex items-center space-x-2">
-            <Image src="/logo.png" alt="Logo" width={150} height={50} priority />
-          </div>
+  <Link href="/" aria-label="Go to home">
+    <Image src="/logo.png" alt="Logo" width={150} height={50} priority />
+  </Link>
+</div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-6 font-bold text-sm tracking-wider">
@@ -51,8 +54,8 @@ export default function Header() {
                 key={i}
                 href="#"
                 className={cn(
-                  "transition-colors duration-200 hover:text-yellow-400",
-                  item === "Home" && "text-yellow-400"
+                  "transition-colors duration-200 hover:text-[#ffda08]",
+                  item === "Home" && "text-[#ffda08]"
                 )}
               >
                 {item.toUpperCase()}
@@ -77,8 +80,8 @@ export default function Header() {
               key={i}
               href="#"
               className={cn(
-                "transition-colors duration-200 hover:text-yellow-400",
-                item === "Home" && "text-yellow-400"
+                "transition-colors duration-200 hover:text-[#ffda08]",
+                item === "Home" && "text-[#ffda08]"
               )}
             >
               {item.toUpperCase()}

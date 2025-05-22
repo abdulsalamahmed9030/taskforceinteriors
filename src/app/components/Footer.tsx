@@ -54,7 +54,7 @@ export default function Footer() {
               "Contact Us",
             ].map((item) => (
               <li key={item}>
-                <a href="#" className="hover:text-yellow-400 transition-colors duration-200">
+                <a href="#" className="hover:text-[#ffda08] transition-colors duration-200">
                   {item}
                 </a>
               </li>
@@ -66,16 +66,16 @@ export default function Footer() {
         <div>
   <h3 className="font-bold uppercase mb-4 tracking-wide text-xl">FOLLOW US</h3>
   <div className="flex flex-col space-y-4 text-white text-lg">
-    <a href="#" aria-label="Facebook" className="hover:text-yellow-400 transition-colors duration-200">
+    <a href="#" aria-label="Facebook" className="hover:text-[#ffda08] transition-colors duration-200">
       <FaFacebookF />
     </a>
-    <a href="#" aria-label="Twitter" className="hover:text-yellow-400 transition-colors duration-200">
+    <a href="#" aria-label="Twitter" className="hover:text-[#ffda08] transition-colors duration-200">
       <FaTwitter />
     </a>
-    <a href="#" aria-label="LinkedIn" className="hover:text-yellow-400 transition-colors duration-200">
+    <a href="#" aria-label="LinkedIn" className="hover:text-[#ffda08] transition-colors duration-200">
       <FaLinkedinIn />
     </a>
-    <a href="#" aria-label="Instagram" className="hover:text-yellow-400 transition-colors duration-200">
+    <a href="#" aria-label="Instagram" className="hover:text-[#ffda08] transition-colors duration-200">
       <FaInstagram />
     </a>
   </div>

@@ -54,12 +54,12 @@ export default function StatisticsSection() {
     <section className="bg-[url('/funfact-bg.png')] bg-cover bg-center bg-white py-16 md:py-24 lg:py-32">
       <div className="container mx-auto px-4">
         <div className="lg:w-1/2 mb-10">
-          <h6 className="text-yellow-500 text-xl uppercase tracking-widest font-semibold mb-2">
+          <h6 className="text-[#ffda08] text-xl uppercase tracking-widest font-semibold mb-2">
             Statistics
           </h6>
           <h2 className="font-oswald text-3xl md:text-6xl font-extrabold text-gray-900">
             Well-established and{" "}
-            <span className="text-yellow-400">Experienced</span>
+            <span className="text-[#ffda08]">Experienced</span>
           </h2>
         </div>
 
