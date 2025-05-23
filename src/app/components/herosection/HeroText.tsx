@@ -6,9 +6,16 @@ interface HeroTextProps {
   title: string;
   subtitle: string;
   description: string;
+  descriptionClassName?: string; // ✅ optional padding class
 }
 
-export default function HeroText({ id, title, subtitle, description }: HeroTextProps) {
+export default function HeroText({
+  id,
+  title,
+  subtitle,
+  description,
+  descriptionClassName = "",
+}: HeroTextProps) {
   return (
     <div className="relative z-10">
       {/* Decorative background behind text */}
@@ -38,9 +45,14 @@ export default function HeroText({ id, title, subtitle, description }: HeroTextP
             subtitle
           )}
         </h2>
-        <p className="text-justify text-gray-300 mb-6 max-w-full sm:max-w-md text-sm sm:text-base px-[2px]">
+
+        {/* ✅ Added dynamic padding class here */}
+        <p
+          className={`text-justify text-gray-300 mb-6 max-w-full sm:max-w-md text-sm sm:text-base px-[2px] ${descriptionClassName}`}
+        >
           {description}
         </p>
+
         <a href="#" className="underline text-sm tracking-wider font-semibold">
           View More
         </a>
