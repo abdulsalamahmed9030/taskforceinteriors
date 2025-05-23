@@ -45,13 +45,14 @@ export default function HeroSection() {
     <section className="relative w-full h-[90vh] bg-black text-white overflow-hidden">
       {/* Left: Text Content */}
       <div className="absolute inset-y-0 left-0 w-full md:w-1/2 px-4 sm:px-10 md:px-20 flex flex-col justify-center z-10">
-        <HeroText
+       <HeroText
   id={slide.id}
   title={slide.title}
   subtitle={slide.subtitle}
   description={slide.description}
-  descriptionClassName="pr-8 md:pr-10" // ✅ Padding applied only to description
+  descriptionClassName="pr-8 md:pr-10"
 />
+
       </div>
 
       {/* Right: Image Content */}
