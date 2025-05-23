@@ -10,6 +10,7 @@ import TeamSection from './components/TeamSection'
 import StatisticsSection from './components/Statistics'
 import MapSection from './components/MapSection'
 import Copyright from './components/Copyright'
+import Portfolio from './components/portfolio'
 
 const page = () => {
   return (
@@ -22,6 +23,7 @@ const page = () => {
     <TeamSection />
     <StatisticsSection />
     <MapSection />
+    <Portfolio />
     <Footer />
     <Copyright />
     <BackToTop />
